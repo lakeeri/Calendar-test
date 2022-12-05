@@ -1,0 +1,59 @@
+.task-field{
+    width: 100%;
+}
+.btn{
+    display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: none;  
+	border-radius: 4px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #fff;
+	background-color: rgb(17, 145, 255);
+	box-shadow: 0 2px #316ab9;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+}
+.btn:hover {
+	background-color: rgb(13, 133, 238);
+}
+.btn:active {
+	background-color: #4a6a9e !important;
+}
+.btn:focus-visible {
+	box-shadow: 0 0 0 3px lightskyblue;
+}
+
+.one_task{
+    width:50%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    box-shadow: 0 3px 3px 0 rgb(198, 212, 224);
+    margin:1% 0;
+}
+.one_task:hover{
+    box-shadow: 0 3px 3px 0 rgb(168, 179, 189);
+}
+.task_btn{
+    border:none;
+    background-color: white;
+    color:rgb(14, 117, 207);
+    font-weight:bolder
+}
+
+.task_btn:hover{
+    color:rgb(48, 148, 235);
+    cursor:pointer;
+}

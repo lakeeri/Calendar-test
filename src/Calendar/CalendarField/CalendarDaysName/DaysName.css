@@ -1,0 +1,11 @@
+.calendar-daysname{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    height: 8%;
+    
+}
+.names{
+    padding:5px;
+    background-color: rgb(231, 247, 255);
+}
