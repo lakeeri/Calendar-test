@@ -1,11 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
 import currMonthSlice from './currMonthSlice/currMonthSlice';
 import currYearSlice from './currYearSlice/currYearSlice';
-import modalAddTaskSlice from './modalSlices/modalAddTaskSlice';
-import modalEditTaskSlice from './modalSlices/modalEditTaskSlice';
-import modalSuccessSlice from './modalSlices/modalSuccessSlice';
 import monthsSlise from './monthsSlice/monthsSlise';
 import nameDaysSlice from './nameDaysSlice/nameDaysSlice';
+import notificationSlice from './notificationSlice/notificationSlice';
 import tasksSlice from './tasksSlice/tasksSlice';
 import yearsSlice from './yearsSlice/yearsSlice';
 
@@ -17,9 +15,7 @@ const store = configureStore({
     currYear: currYearSlice,
     currMonth: currMonthSlice,
     tasks: tasksSlice,
-    modalAddTask: modalAddTaskSlice,
-    modalEditTask: modalEditTaskSlice,
-    modalSuccess: modalSuccessSlice,
+    notifications: notificationSlice,
   },
 });
 

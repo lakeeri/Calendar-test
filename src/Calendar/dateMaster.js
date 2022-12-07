@@ -8,20 +8,33 @@ export default function dateMaster(currYear, currMonth) {
   for (let i = firstDayofMonth - 1; i > 0; i--) {
     date = lastDateofLastMonth - i + 1;
     numbers.push({
-      date, className: 'date another_month', month: currMonth - 1,
+      date,
+      className: 'another_month',
+      month: currMonth - 1,
+      year: currYear,
     });
   }
 
   for (let i = 1; i <= lastDateofMonth; i++) {
     date = i;
-    numbers.push({ date, className: 'date current_month', month: currMonth });
+    numbers.push({
+      date,
+      className: 'current_month',
+      month: currMonth,
+      year: currYear,
+    });
   }
 
   const optimalLength = 42 - numbers.length;
 
   for (let i = 1; i <= optimalLength; i++) {
     date = i;
-    numbers.push({ date, className: 'date another_month', month: currMonth + 1 });
+    numbers.push({
+      date,
+      className: 'another_month',
+      month: currMonth + 1,
+      year: currYear,
+    });
   }
 
   return numbers;

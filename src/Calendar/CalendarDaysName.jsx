@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import './DaysName.css';
 
 export default function CalendarDaysName() {
   const nameDays = useSelector(((state) => state.nameDays));

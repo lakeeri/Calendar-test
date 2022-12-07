@@ -8,24 +8,16 @@ const tasksSlice = createSlice({
   initialState,
   reducers: {
     addTask(state, action) {
-      const {
-        year, month, date, title, start, end,
-      } = action.payload;
       return [...state, {
+        ...action.payload,
         id: uuidv4(),
-        year,
-        month,
-        date,
-        title,
-        start,
-        end,
+        title: action.payload.title || '(Без заголовка)',
       }];
     },
     deleteTask(state, action) {
       return state.filter((task) => task.id !== action.payload);
     },
     editTask(state, action) {
-      console.log(action.payload);
       return state.map((task) => (
         task.id === action.payload.id ? { ...action.payload } : task));
     },

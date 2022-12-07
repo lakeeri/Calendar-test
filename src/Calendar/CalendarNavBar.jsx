@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setCurrMonth } from '../../../redux/currMonthSlice/currMonthSlice';
-import { setCurrYear } from '../../../redux/currYearSlice/currYearSlice';
+import { setCurrMonth } from '../redux/currMonthSlice/currMonthSlice';
+import { setCurrYear } from '../redux/currYearSlice/currYearSlice';
 
 export default function CalendarNavBar() {
   const dispatch = useDispatch();

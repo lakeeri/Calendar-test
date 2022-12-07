@@ -1,0 +1,84 @@
+.calendar_field{
+    width: 100%;
+}
+.calendar_navbar{
+    height:7%;
+    display:flex;
+    justify-content: flex-end;
+    gap:1px;
+}
+
+.navbar_select{
+    height: 60%;
+    width:8%;
+    font-size: larger;
+    border-radius: 5px;
+    border:2px solid rgb(198, 212, 224);
+    background-color:white;
+    color:rgb(76, 81, 85);
+ }
+.calendar-daysname{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    height: 8%;
+    
+}
+.names{
+    padding:5px;
+    background-color: rgb(231, 247, 255);
+}
+.calendar_wrapperitems{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 10px;
+    row-gap: 3px;
+    height: 80%;
+    font-size:larger
+}
+
+.another_month,
+.current_month{
+    padding: 5px;
+    border-top:2px solid rgb(227, 231, 235);
+    text-align: center; 
+    overflow: hidden;
+    height:100%;
+    /* text-overflow:ellipsis; */
+}
+.another_month{
+    color:rgb(209, 205, 205);
+    
+}
+
+.another_month:hover,
+.current_month:hover{
+    background-color: rgb(231, 247, 255);
+    border-top:2px solid rgb(17, 145, 255)
+}
+
+.current_date,
+.date{
+    border-radius: 50%;
+    width:14%;
+    height:27%;
+    padding-top: 1%;
+ }
+ .current_date{
+    background-color:  rgb(17, 145, 255);
+ }
+
+.task_list{
+    margin-top:1%;
+    text-align: start;
+} 
+
+.task{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+li::marker{
+    color:lightgreen
+}

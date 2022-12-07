@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import CalendarItem from './CalendarItem/CalendarItem';
+import CalendarItem from './CalendarItem';
 import dateMaster from './dateMaster';
-import './WrapperItems.css';
 
 export default function CalendarWrapperItems() {
   const currYear = useSelector((state) => state.currYear);
@@ -20,7 +19,6 @@ export default function CalendarWrapperItems() {
           key={index}
           className={date.className}
           date={date}
-          year={currYear}
         />
       ))}
     </div>
